@@ -62,7 +62,7 @@ export const CatFoodCard = ({
     }
     if (rawWeight && typeof rawTitle === "string") {
       const words = rawWeight.split(" ");
-      setWeight(words[0]);
+      setWeight(words[0].replace(".", ","));
       setDimMeasure(rawWeight.slice(words[0].length));
     } else {
       cryAboutError("weight", "string");
