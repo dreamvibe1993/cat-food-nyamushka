@@ -23,7 +23,7 @@ function App() {
       weight: "2 кг",
       isCustomerHappy: 0,
       imgPath: "images/cat-0.png",
-      itemDescription: "Головы щучьи с чесноком да свежайшая сёмгушка",
+      itemDescription: "Головы щучьи с чесноком да свежайшая сёмгушка.",
     },
     {
       id: "chicken",
