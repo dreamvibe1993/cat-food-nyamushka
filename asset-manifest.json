@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/nyamushka/static/css/main.765a5a8e.css",
-    "main.js": "/nyamushka/static/js/main.ab908a56.js",
-    "static/js/787.2b99c7da.chunk.js": "/nyamushka/static/js/787.2b99c7da.chunk.js",
-    "static/media/exo-thin.otf": "/nyamushka/static/media/exo-thin.51c257bfa8ec3e0cfb4b.otf",
-    "static/media/tile-32.png": "/nyamushka/static/media/tile-32.d6f07f8ed5f5049a96ce.png",
-    "index.html": "/nyamushka/index.html",
-    "main.765a5a8e.css.map": "/nyamushka/static/css/main.765a5a8e.css.map",
-    "main.ab908a56.js.map": "/nyamushka/static/js/main.ab908a56.js.map",
-    "787.2b99c7da.chunk.js.map": "/nyamushka/static/js/787.2b99c7da.chunk.js.map"
+    "main.css": "/cat-food-nyamushka/static/css/main.aec01c68.css",
+    "main.js": "/cat-food-nyamushka/static/js/main.15d41103.js",
+    "static/js/787.2b99c7da.chunk.js": "/cat-food-nyamushka/static/js/787.2b99c7da.chunk.js",
+    "static/media/exo-thin.otf": "/cat-food-nyamushka/static/media/exo-thin.51c257bfa8ec3e0cfb4b.otf",
+    "static/media/tile-32.png": "/cat-food-nyamushka/static/media/tile-32.d6f07f8ed5f5049a96ce.png",
+    "index.html": "/cat-food-nyamushka/index.html",
+    "main.aec01c68.css.map": "/cat-food-nyamushka/static/css/main.aec01c68.css.map",
+    "main.15d41103.js.map": "/cat-food-nyamushka/static/js/main.15d41103.js.map",
+    "787.2b99c7da.chunk.js.map": "/cat-food-nyamushka/static/js/787.2b99c7da.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.765a5a8e.css",
-    "static/js/main.ab908a56.js"
+    "static/css/main.aec01c68.css",
+    "static/js/main.15d41103.js"
   ]
 }
