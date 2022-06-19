@@ -1,10 +1,29 @@
+html {
+  font-size: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 2.8vw;
+  }
+}
+
 body {
   margin: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 10px;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../public/images/tile-32.png");
+  background-size: 7rem 14rem;
 }
 
 code {

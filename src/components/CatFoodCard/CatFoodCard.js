@@ -69,7 +69,8 @@ export const CatFoodCard = ({
     }
   }, [rawGiftMice, rawPortions, rawTitle, rawWeight]);
 
-  const chooseThisItem = () => {
+  const chooseThisItem = (e) => {
+    if (e) e.stopPropagation();
     if (disabled) return;
     setIsChosen((prev) => !prev);
   };
@@ -89,7 +90,7 @@ export const CatFoodCard = ({
       <CardBorder
         disabled={disabled}
         isChosen={isChosen}
-        onClick={chooseThisItem}
+        onClick={(e) => chooseThisItem(e)}
       >
         <Card>
           <TextBlock disabled={disabled}>
@@ -142,7 +143,7 @@ const FlexRow = styled.div`
 
 const CardBorder = styled.div`
   * {
-    transition: all .2s ease;
+    transition: all 0.2s ease;
   }
   height: var(--cardHeight);
   width: var(--cardWidth);
@@ -156,7 +157,9 @@ const CardBorder = styled.div`
   --cardBorderColor: ${(p) => p.isChosen && `var(--cardBorderColorChosen)`};
   --cardBorderColor: ${(p) => p.disabled && `var(--cardBorderColorDisabled)`};
   &:hover {
-    --cardBorderColor: var(--cardBorderColorChosen);
+    @media (min-width: 768px) {
+      --cardBorderColor: var(--cardBorderColorChosen);
+    }
   }
 `;
 
@@ -170,7 +173,6 @@ const Card = styled(CardBorder)`
   width: calc(var(--cardWidth) - var(--cardBorderWidth));
   transform: translate(-50%, -50%);
   background-color: var(--cardBGColor);
-  pointer-events: none;
 `;
 
 const CatImg = styled.img`

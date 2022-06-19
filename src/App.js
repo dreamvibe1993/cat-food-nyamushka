@@ -54,8 +54,7 @@ function App() {
 export default App;
 
 const AppContainer = styled.div`
-  background-image: url("images/tile-32.png");
-  background-size: 7rem 14rem;
+  width: 100%;
 `;
 
 const FlexRow = styled.div`
@@ -69,5 +68,16 @@ const IndexHeadingWrapper = styled(FlexRow)`
 
 const CardsRow = styled(FlexRow)`
   justify-content: space-around;
+  padding: 0 2rem;
   padding-bottom: 6.7rem;
+  width: 100%;
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    row-gap: 3rem;
+  }
+  & > * {
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
 `;
