@@ -34,28 +34,37 @@ function App() {
       weight: "5 кг",
       isCustomerHappy: 1,
       imgPath: "images/cat-0.png",
-      disabled: true
+      disabled: true,
     },
   ];
   return (
     <AppContainer>
-      <IndexHeadingWrapper>
-        <IndexHeading1>Ты сегодня покормил кота?</IndexHeading1>
-      </IndexHeadingWrapper>
-      <CardsRow>
-        {catFoods.map((catFoodProps) => (
-          <CatFoodCard key={catFoodProps.id} {...catFoodProps} />
-        ))}
-      </CardsRow>
+      <CatFoodBlock>
+        <IndexHeadingWrapper>
+          <IndexHeading1>Ты сегодня покормил кота?</IndexHeading1>
+        </IndexHeadingWrapper>
+        <CardsRow>
+          {catFoods.map((catFoodProps) => (
+            <CatFoodCard key={catFoodProps.id} {...catFoodProps} />
+          ))}
+        </CardsRow>
+      </CatFoodBlock>
     </AppContainer>
   );
 }
 
 export default App;
 
-const AppContainer = styled.div`
-  width: 100%;
+const CatFoodBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (min-width: 768px) {
+    min-height: 100vh;
+  }
 `;
+
+const AppContainer = styled.div``;
 
 const FlexRow = styled.div`
   display: flex;
