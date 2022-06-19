@@ -2,7 +2,7 @@
   "name": "cats-food",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dreamvibe1993.github.io/nyamushka",
+  "homepage": "https://dreamvibe1993.github.io/cat-food-nyamushka",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
